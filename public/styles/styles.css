@@ -1,7 +1,7 @@
 #login-page {
   background-image: url("../images/nbc-lesbiantinder-v2_f3f76d6241995d63c649366f0a6da8fc.fit-760w.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
   opacity: 0.9;
   background-color: black;
 }
@@ -12,7 +12,15 @@ header h1 {
 
 header button {
   height: 50px;
+
+
+  opacity: 0.9;
+  background-color: black;
+
 }
+
+
+
 
 #signup-page {
   background-image: url("../images/nbc-lesbiantinder-v2_f3f76d6241995d63c649366f0a6da8fc.fit-760w.jpg");
@@ -21,3 +29,4 @@ header button {
   opacity: 0.9;
   background-color: black;
 }
+
