@@ -126,19 +126,19 @@
 })();
 
 //hide, display and onclick functions
-function reset() {
-  $("#login-page").hide();
-  $("#signup-page").show();
-}
+// function reset() {
+//   $("#login-page").hide();
+//   $("#signup-page").show();
+// }
 
-function openDisplay() {
-  $("#login-page").hide();
-  $("#signup-page").show();
-}
+// function openDisplay() {
+//   $("#login-page").hide();
+//   $("#signup-page").show();
+// }
 
-$("#signup").on("click", function() {
-  openDisplay("#signup-page");
-});
+// $("#signup").on("click", function() {
+//   openDisplay("#signup-page");
+// });
 
-//when the page loads, we only want the login page to show
-$("#signup-page").hide();
+// //when the page loads, we only want the login page to show
+// $("#signup-page").hide();
