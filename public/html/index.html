@@ -22,8 +22,19 @@
       crossorigin="anonymous"
     />
     <!--<link rel="stylesheet" type="text/css" href="/assets/style/bootstrap.min.css">-->
-    <!-- jQuery library -->
+
+    <!-- jQuery and popper libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+
+    <script src="../js/index.js"></script>
 
     <title>CuddleBuddy</title>
   </head>
@@ -31,29 +42,67 @@
   <body>   
 
     <div id="login-page" class="h-100 d-flex flex-column justify-content-between">
-        <header class="mt-2 d-flex justify-content-between">
+      <header class="mt-2 d-flex justify-content-between">
             
-            <div>
+        <div>
 
-               <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="80px">
-               <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
-            </div>
+          <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="80px">
+          <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
+        </div>
             
-            <button id="login" type="button" class="btn btn-light btn-sm mr-5 mt-0"><h2 class="text-center">LOGIN</h2></button>
+        <button type="button" data-toggle="modal" data-login="clicked" data-target="#loginModal" class="btn btn-light mr-5 mt-0"><h2 class="text-center">LOGIN</h2></button>
 
         
-        </header>
+      </header>
 
-        <div class="text-center">
+      <div class="text-center">
 
-            <a href="signup.html"><button id="signup" class="font-weight-bold"><h2>Sign up to find a CuddleBuddy</h2></button></a>
+        <a href="signup.html"><button id="signup" class="font-weight-bold"><h2>Sign up to find a CuddleBuddy</h2></button></a>
 
            
+      </div>
+
+      <footer class="text-center">
+        <small class="font-weight-bold text-dark">Copyright&copy; 2019</small>
+      </footer>
+
+    </div>
+
+    <!---Login Modal-->
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!--Modal Content-->
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">SIGN IN</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="user-email">
+              </div>
+              <div class="form-group">
+                <label for="password" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="user-password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="login-button" role="button" type="button" class="btn btn-primary">LOGIN</button>
+          </div>
         </div>
+      </div>
+    </div>
+    <script>
 
-        <footer class="text-center">
-            <small class="font-weight-bold text-dark">Copyright&copy; 2019</small>
-        </footer>
-
+    </script>
+       
   </body>
 </html>
+
+
