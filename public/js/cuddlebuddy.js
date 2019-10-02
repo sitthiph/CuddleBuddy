@@ -44,3 +44,13 @@ $(document).ready(function() {
     }
   });
 });
+
+$("#login-button").on("click", function() {
+  let userInfo = {
+    userEmail: $("#user-email").val(),
+
+    userPassword: $("#user-password").val()
+  };
+
+  console.log(userInfo);
+});
