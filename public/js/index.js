@@ -125,19 +125,15 @@
 //   );
 // })();
 
-// The modal event function
 
-console.log("connected");
+$("#login-button").on("click", function() {
 
+  let userInfo = {
 
-$("#loginModal").on("show.bs.modal", function (event) {
-   //let button = $(event.relatedTarget) // Button that triggered the modal
-   //let recipient = button.data("login") // Extract info from data-* attributes
-  // // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  
-     $("#loginModal").find("modal-body input")
-     $("#loginModal").find("modal-body input")
+    userEmail: $("#user-email").val(),
 
-  
+    userPassword: $("#user-password").val()
+  }
+
+  console.log(userInfo);
 })
