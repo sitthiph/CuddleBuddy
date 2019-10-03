@@ -1,12 +1,9 @@
 var db = require("../models");
-const orm = require("./orm");
 
 module.exports = function(app) {
   // Get all users
   app.get("/api/users", function(req, res) {
-  orm.readUsers(function(data){
-    res.json(data);
-  });  
+  
 });
       
   // Get all examples
