@@ -20,3 +20,6 @@ INSERT INTO chat_table(sender_id, message, receiver_id) VALUES
 	(1, "Right now?", 2),
 	(2, "Coming Over!", 1)
 ;
+
+INSERT INTO pending_table(user_id, pending_id) values
+    (1, 3),

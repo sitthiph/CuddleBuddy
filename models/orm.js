@@ -23,7 +23,7 @@ const connection = require("./connection.js");
   }
 
 /**
- * 
+ *
  * @param userId1 - The Person's account id;
  * @param userId2 - The Matched's partner id;
  */
