@@ -29,72 +29,57 @@
   </head>
 
   <body>
-    <div id="signup-page" class="h-100 d-flex flex-column justify-content-between">
-      <header class="mt-4 d-flex justify-content-between">
-          
-          <div>
-             <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="150px">
-             <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
-          </div>
-          
-          <button id="login" type="button" class="btn btn-light btn-sm mr-5 mt-5" href="#"><h2 class="text-center">LOGIN</h2></button>
       
+    <div id="signup-page" class="h-100 d-flex flex-column">
+          
+      <header class="mt-2 d-flex justify-content-between">
+              
+        <div>
+  
+          <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="80px">
+          <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
+        </div>
+              
+        <!-- <button id="login" type="button" class="btn btn-light btn-sm mr-5 mt-0"><h2 class="text-center">LOGIN</h2></button> -->
+  
+          
       </header>
-      <div class="container mt-5">
+      
+      
+      <div class="container mt-3 h-30">
         <div class="row">
           <div class="col-md-12">
-            <div class="card text-white bg-dark h-60 w-80 mb-5 mt-n4">
-              <div class="card-header">
-                <strong
-                  >Share you details with us before you find your cuddle
-                  buddy!</strong
-                >
+            <div class="card text-white bg-dark">                
+              
               <div class="card-body">
-                <form>
+                <form class="mt-0">
+                  
                   <div class="form-row">
+                    
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">First Name</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail4"
-                        placeholder="John"
-                      />
+                      <input type="firstname" class="form-control" id="firstname" placeholder="John">
                     </div>
+                    
+                    
                     <div class="form-group col-md-6">
                       <label for="inputPassword4">Last Name</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="inputPassword4"
-                        placeholder="Doe"
-                      />
+                      <input type="lastname" class="form-control" id="lastname" placeholder="Doe">
                     </div>
                   </div>
+                  
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="exampleInputEmail1">Email address</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter email"
-                      />
-                      <small id="emailHelp" class="form-text text-muted"
-                        >We'll never share your email with anyone else.</small
-                      >
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
+                    
                     <div class="form-group col-md-6">
                       <label for="exampleInputPassword1">Password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Password"
-                      />
+                      <input type="password" class="form-control" id="password" placeholder="Password">
                     </div>
                   </div>
+                  
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="gender">Gender</label>
@@ -104,30 +89,36 @@
                         <option>Prefer not to specify</option>
                       </select>
                     </div>
+                    
                     <div class="form-group col-md-6">
                       <label for="exampleInputPassword1">Date of Birth</label>
-                      <input
-                        type="dob"
-                        class="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="12/15/90"
-                      />
+                      <input type="dob" class="form-control" id="dob" placeholder="12/15/90">
                     </div>
                   </div>
-                  <div class="form-group">
+
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="gender">Preferred Cuddler Gender</label>
+                        <select class="form-control" id="pregender">
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Both</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="image">Image-url</label>
+                          <input type="description" class="form-control" id="image" placeholder="link to your image">
+                        </div>
+                  
+                  <div class="form-group col-md-12">
                     <label for="exampleInputEmail1">Description</label>
-                    <input
-                      type="description"
-                      class="form-control"
-                      id="desc"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
+                    <input type="description" class="form-control" id="desc" placeholder="Few words about yourself">
                   </div>
 
-                  <br />
-                  <button type="submit" class="btn btn-primary">
-                    Sign up to find your cuddle buddy!
+                  <br>
+                  
+                  <button id="signup-button" type="submit" class="btn btn-primary ">
+                    Sign up
                   </button>
                 </form>
               </div>
@@ -136,8 +127,8 @@
         </div>
       </div>
     </div>
-    <footer class="text-center">
-      <small class="font-weight-bold">Copyright&copy; 2019</small>
+    <footer class="text-center mt-n4">
+      <small class="font-weight-bold text-dark">Copyright&copy; 2019</small>
   </footer>
 
     <script
@@ -145,6 +136,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="../js/signup.js"></script>
+    
   </body>
 </html>

@@ -1,7 +1,8 @@
 INSERT INTO user_table(first_name, last_name, gender, date_of_birth, email, pic_path, user_description) VALUES
 	("Samanan", "Itthiphinyo", 0, "1992-05-01", "saman.itthipq@gmail.com", "FILE_PATH", "hello"),
     ("Mike", "Jackson", 0,  "2012-05-19", "makeq@gmail.com", "FILE_PATH", "LOVE"),
-    ("yah", "YeeT", 1,  "2001-05-01", "samaaan.itthipq@gmail.com", "FILE_PATH", "HELLO")
+    ("yah", "YeeT", 1,  "2001-05-01", "samaaan.itthipq@gmail.com", "FILE_PATH", "HELLO"),
+    ("YAHHH", "YEEEHAW", 1,  "1999-07-15", "itthipq@gmail.com", "FILE_PATH", "COME HERE BB")
 ;
 
 INSERT INTO matched_table(user_id_1, user_id_2) VALUES

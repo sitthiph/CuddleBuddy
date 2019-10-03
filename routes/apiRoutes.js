@@ -7,7 +7,13 @@ module.exports = function(app) {
   orm.readUsers(function(data){
     res.json(data);
   });  
+});
       
+  // Get all examples
+  app.get("/api/contracts", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.json(dbExamples);
+    });
   });
   // Get single user
   app.get("/api/users/:userId", function(req, res) {

@@ -99,46 +99,53 @@
 // $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  "use strict";
-  window.addEventListener(
-    "load",
-    function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName("needs-validation");
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener(
-          "submit",
-          function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add("was-validated");
-          },
-          false
-        );
-      });
-    },
-    false
-  );
-})();
+// (function() {
+//   "use strict";
+//   window.addEventListener(
+//     "load",
+//     function() {
+//       // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//       var forms = document.getElementsByClassName("needs-validation");
+//       // Loop over them and prevent submission
+//       var validation = Array.prototype.filter.call(forms, function(form) {
+//         form.addEventListener(
+//           "submit",
+//           function(event) {
+//             if (form.checkValidity() === false) {
+//               event.preventDefault();
+//               event.stopPropagation();
+//             }
+//             form.classList.add("was-validated");
+//           },
+//           false
+//         );
+//       });
+//     },
+//     false
+//   );
+// })();
 
-//hide, display and onclick functions
-// function reset() {
-//   $("#login-page").hide();
-//   $("#signup-page").show();
-// }
+$("#login-button").on("click", function() {
+  let userInfo = {
+    userEmail: $("#user-email").val(),
+    userPassword: $("#user-password").val()
+  };
 
-// function openDisplay() {
-//   $("#login-page").hide();
-//   $("#signup-page").show();
-// }
+  console.log(userInfo);
+});
 
-// $("#signup").on("click", function() {
-//   openDisplay("#signup-page");
-// });
+$("#signup-button").on("click", function() {
+  let newuserInfo = {
+    firstName: $("#firstname").val(),
+    lastName: $("#lastname").val(),
+    emailAddress: $("#email").val(),
+    password: $("#password").val(),
+    gender: $("#gender").val(),
+    dateofBirth: $("#dob").val(),
+    cuddlerGender: $("#pregender").val(),
+    imageLink: $("#image").val(),
+    description: $("#desc").val()
+  };
 
-// //when the page loads, we only want the login page to show
-// $("#signup-page").hide();
+  console.log(newuserInfo);
+});
