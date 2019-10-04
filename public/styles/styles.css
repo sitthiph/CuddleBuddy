@@ -21,3 +21,9 @@ header button {
   /* opacity: 0.9; */
   background-color: black;
 }
+
+#signup{
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(252, 146, 76), rgb(255, 230, 0));
+  border: none;
+}
