@@ -3,8 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!--font Awesome-->
     <script src="https://kit.fontawesome.com/ba12d81664.js"></script>
+    
     <!--CSS-->
     <link
       rel="stylesheet"
@@ -12,20 +14,20 @@
       media="screen"
       href="../styles/styles.css"
     />
+    
     <!--Authors-->
     <meta name="author" content="" />
+    
     <!--Bootstrap-->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
-    <!--<link rel="stylesheet" type="text/css" href="/assets/style/bootstrap.min.css">-->
-
-    
+    />    
 
     <title>CuddleBuddy</title>
+
   </head>
 
   <body>   
@@ -33,16 +35,17 @@
     <!--wrapper-->
     <div id="login-page" class="h-100 d-flex flex-column justify-content-between">
 
-      <!--header-->
-      
+      <!--header-->      
       <header class="mt-2 d-flex justify-content-between">
             
         <div>
-
+          <!--logo and page header-->
           <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="80px">
           <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
+
         </div>
             
+        <!--login button-->
         <button type="button" data-toggle="modal" data-login="clicked" data-target="#loginModal" class="btn btn-light mr-5 mt-0"><h2 class="text-center">LOGIN</h2></button>
 
         
@@ -50,11 +53,12 @@
 
       <div class="text-center">
 
+        <!--sign-up button-->
         <a href="signup.html"><button id="signup" class="font-weight-bold"><h2>Sign up to find a CuddleBuddy</h2></button></a>
 
            
       </div>
-
+      <!--footer-->
       <footer class="text-center">
         <small class="font-weight-bold text-dark">Copyright&copy; 2019</small>
       </footer>
@@ -86,7 +90,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button id="login-button" role="button" type="button" class="btn btn-primary">LOGIN</button>
+            <button id="login-button" role="button" data-dismiss="modal" type="button" class="btn btn-primary">LOGIN</button>
           </div>
         </div>
       </div>
@@ -102,7 +106,8 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
     crossorigin="anonymous"></script>
 
-    <script src="../js/index.js"></script>
+    <!--link to js file for index page-->
+    <script src="../js/cuddlebuddy.js"></script>
        
   </body>
 </html>

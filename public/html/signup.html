@@ -3,8 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!--font Awesome-->
     <script src="https://kit.fontawesome.com/ba12d81664.js"></script>
+
     <!--CSS-->
     <link
       rel="stylesheet"
@@ -12,40 +14,39 @@
       media="screen"
       href="../styles/styles.css"
     />
+
     <!--Authors-->
     <meta name="author" content="" />
+
     <!--Bootstrap-->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
-    <!--<link rel="stylesheet" type="text/css" href="/assets/style/bootstrap.min.css">-->
-    <!-- jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    />    
+    
     <title>CuddleBuddy</title>
   </head>
 
   <body>
-      
+
+    <!--wrapper-->      
     <div id="signup-page" class="h-100 d-flex flex-column">
-          
-      <header class="mt-2 d-flex justify-content-between">
-              
+
+      <!--header-->          
+      <header class="mt-2 d-flex justify-content-between">   
+
         <div>
-  
+
+          <!--logo and page header-->  
           <img src="../images/512x512bb.jpg" class="ml-5 mt-n5" width="80px">
           <h1 class="d-inline mt-4 ml-n1 text-white font-weight-bold text-center">CuddleBuddy</h1>
-        </div>
-              
-        <!-- <button id="login" type="button" class="btn btn-light btn-sm mr-5 mt-0"><h2 class="text-center">LOGIN</h2></button> -->
-  
+        </div>            
           
-      </header>
+      </header>      
       
-      
+      <!--form for new user sign-up-->
       <div class="container mt-3 h-30">
         <div class="row">
           <div class="col-md-12">
@@ -92,13 +93,13 @@
                     
                     <div class="form-group col-md-6">
                       <label for="exampleInputPassword1">Date of Birth</label>
-                      <input type="dob" class="form-control" id="dob" placeholder="12/15/90">
+                      <input type="dob" class="form-control" id="dob" placeholder="mm/dd/yyyy">
                     </div>
                   </div>
 
                   <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label for="gender">Preferred Cuddler Gender</label>
+                        <label for="gender">Who To Cuddle</label>
                         <select class="form-control" id="pregender">
                           <option>Male</option>
                           <option>Female</option>
@@ -108,7 +109,7 @@
                       <div class="form-group col-md-6">
                           <label for="image">Image-url</label>
                           <input type="description" class="form-control" id="image" placeholder="link to your image">
-                        </div>
+                      </div>
                   
                   <div class="form-group col-md-12">
                     <label for="exampleInputEmail1">Description</label>
@@ -117,6 +118,7 @@
 
                   <br>
                   
+                  <!--sign-up button-->
                   <button id="signup-button" type="submit" class="btn btn-primary ">
                     Sign up
                   </button>
@@ -131,12 +133,11 @@
       <small class="font-weight-bold text-dark">Copyright&copy; 2019</small>
   </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/signup.js"></script>
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--link to js file for sign-up page-->
+  <script src="../js/cuddlebuddy.js"></script>
     
-  </body>
+</body>
 </html>
