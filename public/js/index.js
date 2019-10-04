@@ -149,3 +149,4 @@ $("#signup-button").on("click", function() {
 
   console.log(newuserInfo);
 });
+

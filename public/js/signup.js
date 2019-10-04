@@ -13,3 +13,19 @@ $("#signup-button").on("click", function() {
 
   console.log(newuserInfo);
 });
+
+
+var mouse_is_inside = false;
+
+$(document).ready(function()
+{
+    $('.form_content').hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    $("body").mouseup(function(){ 
+        if(! mouse_is_inside) $('.container').hide();
+    });
+});
