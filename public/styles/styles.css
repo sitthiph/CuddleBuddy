@@ -21,3 +21,20 @@ header button {
   /* opacity: 0.9; */
   background-color: black;
 }
+
+#signup{
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(252, 146, 76), rgb(255, 230, 0));
+  border: none;
+}
+
+.container .card{
+  background-image: linear-gradient(rgb(218, 99, 20), rgba(6, 53, 153, 0.973));
+  border: none;
+  border-radius: 10px;
+}
+
+
+.fas{
+  color: rgb(233, 138, 30);
+}
