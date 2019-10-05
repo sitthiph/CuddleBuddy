@@ -166,6 +166,7 @@ $.ajax({
   console.log(data);
         
 
+
   // Loop through and display unmatched users, dynamically created html
 
   for (var i = 0; i < data.length; i++) {
@@ -195,6 +196,33 @@ $.ajax({
     var pendingId = data[i].pendingId;
 
     return pendingId;
+
+    // This is here for reference
+
+    // var waitList = $("#waitList");
+
+    // // Then display the fields in the HTML (Section Name, Date, URL)
+          
+    // var listItem = $("<li class='list-group-item mt-4'>");
+
+    // listItem.append(
+          
+    //   $("<h2>").text("Table #" + (i + 1)),
+          
+    //   $("<hr>"),
+          
+    //   $("<h2>").text("ID: " + waitData[i].customerID),
+          
+    //   $("<h2>").text("Name: " + waitData[i].customerName),
+          
+    //   $("<h2>").text("Email: " + waitData[i].customerEmail),
+          
+    //   $("<h2>").text("Phone: " + waitData[i].phoneNumber)
+          
+    // );
+
+    // waitList.append(listItem);
+
         
   }
       
@@ -244,7 +272,7 @@ $("#cuddle-button").on("click", function() {
     // Loop through and display matched users, dynamically created html
   
     for (var i = 0; i < data.length; i++) {
-  
+        
       $("#matched").append(
 
         $("<div class='col-sm-4 mt-1'>"),
@@ -262,9 +290,9 @@ $("#cuddle-button").on("click", function() {
         $("<input type='button' class='btn btn-primary text-center ml-5' value='Chat'>").text("Chat")
         
       );
-  
       
-    }
+    };
+  
     
   });
   
