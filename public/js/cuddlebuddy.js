@@ -166,24 +166,36 @@ $.ajax({
   console.log(data);
         
 
-  // Loop through and display unmatched users
+
+  // Loop through and display unmatched users, dynamically created html
 
   for (var i = 0; i < data.length; i++) {
 
-    $("#user-image").attr("src", data[i].pictures);
+    let unmatched = $("#unmatched");
 
-    $("user-age").html(data[i].age);
+    unmatched.append(
 
-    $("#firstname").html(data[i].firstName);
+      $("<div class='col-sm-4 mt-1'>"),
 
-    $("#lastname").html(data[i].lastName);
+      $("<img class='card-img-top'>").attr("src", data[i].pictures),
 
-    $("#user-desc").html(data[i].description);
+      $("<p class='card-text text-center'>").text("Age "+data[i].age),
+
+      $("<div class='col-sm-8'>"),
+
+      $("<div class='card-body'>"),
+
+      $("<h4 class='card-header mt-n4 text-center ml-n4 mr-n4'>").text(data[i].firstName+" "+data[i].lastName),
+
+      $("<p class='card-text'>").text(data[i].description),
+
+      $("<input id='cuddle-button' type='button' class='btn btn-primary text-center ml-5' value='Cuddle Me'>").text("Cuddle Me")
+
+    );
 
     var pendingId = data[i].pendingId;
 
     return pendingId;
-
 
     // This is here for reference
 
@@ -210,10 +222,12 @@ $.ajax({
     // );
 
     // waitList.append(listItem);
+
         
   }
       
 });
+
 
 // cuddleMe button click function
 
@@ -222,8 +236,11 @@ $("#cuddle-button").on("click", function() {
   // storing user id and pending id in an obj
 
   let ids = {
+
     firstData: user_id,
+
     secondData: pendingId
+
   }
 
   // ajax POST method sending ids obj
@@ -252,21 +269,30 @@ $("#cuddle-button").on("click", function() {
     console.log(data);
           
   
-    // Loop through and display matched users
+    // Loop through and display matched users, dynamically created html
   
     for (var i = 0; i < data.length; i++) {
-  
-      $("#user-image").attr("src", data[i].pictures);
-  
-      // $("user-age").html(data[i].age);
-  
-      $("#firstname").html(data[i].firstName);
-  
-      $("#lastname").html(data[i].lastName);
-  
-      // $("#user-desc").html(data[i].description);
+        
+      $("#matched").append(
 
-    }
+        $("<div class='col-sm-4 mt-1'>"),
+
+        $("<img class='card-img-top'>").attr("src", data[i].pictures),
+
+        $("<div class='col-sm-8'>"),
+
+        $("<div class='card-body'>"),
+
+        $("<h4 class='card-header mt-n4 text-center ml-n4 mr-n4'>").text(data[i].firstName+" "+data[i].lastName),
+
+        $("<p class='card-text'>Hello there! Nice to meet you. Click chat to cuddle</p>"),
+
+        $("<input type='button' class='btn btn-primary text-center ml-5' value='Chat'>").text("Chat")
+        
+      );
+      
+    };
+  
     
   });
   
