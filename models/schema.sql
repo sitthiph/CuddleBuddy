@@ -33,3 +33,10 @@ user_id_2 INT NOT NULL,
 CONSTRAINT fk3 FOREIGN KEY (user_id_1) REFERENCES user_table(user_id),
 CONSTRAINT fk4 FOREIGN KEY (user_id_2) REFERENCES user_table(user_id)
 );
+
+CREATE TABLE pending_table(
+user_id INT NOT NULL,
+pending_id INT NOT NULL,
+CONSTRAINT fk5 FOREIGN KEY (user_id) REFERENCES user_table(user_id),
+CONSTRAINT fk6 FOREIGN KEY (pending_id) REFERENCES user_table(user_id)
+);
