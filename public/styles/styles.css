@@ -30,6 +30,11 @@ header button {
   width: 30%;
 }
 
+#close-button {
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
 
 /*style for cuddlebuddy page*/
 #cuddlebuddy-page {
