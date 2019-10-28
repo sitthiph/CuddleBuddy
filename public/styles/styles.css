@@ -26,6 +26,10 @@ header button {
   background-color: black;
 }
 
+#signup-button {
+  width: 30%;
+}
+
 
 /*style for cuddlebuddy page*/
 #cuddlebuddy-page {
